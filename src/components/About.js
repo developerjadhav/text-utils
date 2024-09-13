@@ -7,7 +7,7 @@ export default function About(props) {
     }
 
     return (
-        <div className='container pb-1' style={myStyle} >
+        <div className='container pb-1' id='about' style={myStyle} >
             <h1 className='my-3'>About TextUtils</h1>
             <div className="accordion my-3" id="accordion Example">
                 <div className="accordion-item">

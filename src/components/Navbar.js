@@ -1,5 +1,4 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
 import PropTypes from 'prop-types'
 
 export default function Navbar(props) {
@@ -13,10 +12,10 @@ export default function Navbar(props) {
                 <div className="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul className="navbar-nav me-auto mb-2 mb-lg-0">
                         <li className="nav-item">
-                            <Link className="nav-link" aria-current="page" to="/text-utils">Home</Link>
+                            <a className="nav-link" aria-current="page" href="/text-utils">Home</a>
                         </li>
                         <li className="nav-item">
-                            <Link className="nav-link" to="/text-utils/about">About</Link>
+                            <a className="nav-link" href="#about">About</a>
                         </li>
                     </ul>
 

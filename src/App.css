@@ -31,4 +31,19 @@
 
 .preview-text{
   margin-bottom: 90px;
+  overflow-x: auto;
+}
+
+#home{
+  height: 100vh;
+}
+
+#about{
+  /* height: 100vh; */
+  margin-bottom: 200px;
+}
+
+#preview{
+  height: 300px;
+  overflow-y: auto;
 }

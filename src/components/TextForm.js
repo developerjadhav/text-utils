@@ -48,7 +48,7 @@ export default function TextForm(props) {
     const [text, settext] = useState("");
 
     return (
-        <>
+        <div id="home">
             <div className="container" style={{ color: props.mode === "light" ? "black" : "white" }}>
                 <h1 className='mb-3'>{props.heading}</h1>
                 <div className="mb-3">
@@ -70,8 +70,10 @@ export default function TextForm(props) {
                 <p>{text.split(/\s+/).filter((e) => { return e.length !== 0 }).length} words and {text.length} characters.</p>
                 <p>{0.008 * text.split(" ").filter((e) => { return e.length !== 0 }).length} minutes read.</p>
                 <h2>Preview</h2>
+                <div id="preview">
                 <p className="preview-text">{text.length > 0 ? text : "Nothing to preview"}</p>
+                </div>
             </div>
-        </>
+        </div>
     )
 }
